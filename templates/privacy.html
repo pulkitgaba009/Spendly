@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Spendly — Privacy Policy{% endblock %}
+
+{% block head %}
+{{ super() }}
+<style>
+    .privacy {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    .privacy-section {
+        margin-bottom: 2.5rem;
+    }
+    .privacy-section h2 {
+        color: var(--accent);
+        border-bottom: 2px solid var(--accent-light);
+        padding-bottom: 0.5rem;
+        margin-top: 0;
+    }
+    .privacy-section p {
+        line-height: 1.7;
+        color: var(--ink-soft);
+    }
+    .privacy-section ul {
+        padding-left: 1.5rem;
+    }
+    .privacy-section li {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+    }
+    @media (max-width: 600px) {
+        .privacy {
+            padding: 1rem;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<section class="privacy">
+    <div class="privacy-inner">
+        <h1>Privacy Policy</h1>
+
+        <section class="privacy-section">
+            <h2>Data We Collect</h2>
+            <p>We collect personal information you voluntarily provide to us when registering for an account, contacting us, or using our services. This may include your name, email address, password, and financial transaction data (amounts, categories, dates, descriptions) necessary for the expense tracking functionality.</p>
+        </section>
+
+        <section class="privacy-section">
+            <h2>How We Use Your Data</h2>
+            <p>We use your information to provide, maintain, and improve our service, including:</p>
+            <ul>
+                <li>To create and manage your account</li>
+                <li>To process and categorize your expenses</li>
+                <li>To provide personalized insights and reports</li>
+                <li>To communicate with you about updates, security alerts, and support messages</li>
+                <li>To improve our app based on usage patterns and feedback</li>
+            </ul>
+        </section>
+
+        <section class="privacy-section">
+            <h2>Data Storage</h2>
+            <p>Your data is stored securely on our servers using industry-standard encryption. We retain your data as long as your account is active or as needed to provide you with our service. You may request deletion of your account and associated data at any time.</p>
+            <p>We do not sell your personal data to third parties.</p>
+        </section>
+
+        <section class="privacy-section">
+            <h2>Third Party Services</h2>
+            <p>We may use trusted third-party services to assist in operating our application, such as hosting providers, payment processors (if applicable), and analytics services. These third parties may have access to your information only as necessary to perform their functions and are obligated not to disclose or use it for other purposes.</p>
+        </section>
+
+        <section class="privacy-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us.</p>
+        </section>
+    </div>
+</section>
+
+{% endblock %}
